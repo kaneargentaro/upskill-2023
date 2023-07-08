@@ -1,0 +1,11 @@
+{
+  "name": "javascript-algorithms-and-data-structures-masterclass",
+  "version": "1.0.0",
+  "description": "Course: https://www.udemy.com/course/js-algorithms-and-data-structures-masterclass/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
