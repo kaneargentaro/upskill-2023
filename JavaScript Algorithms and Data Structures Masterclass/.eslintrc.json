@@ -1,0 +1,49 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es2021": true,
+        "node": true
+    },
+    "parserOptions": {
+        "ecmaVersion": "latest"
+    },
+    "rules": {
+        "accessor-pairs": "off",
+        "array-bracket-newline": "off",
+        "array-bracket-spacing": "off",
+        "array-element-newline": "off",
+        "arrow-body-style": "warn",
+        "array-callback-return": ["warn"],
+        "arrow-parens": ["warn", "as-needed", {"requireForBlockBody": true}],
+        "arrow-spacing": ["warn", { "before": true, "after": true }],
+        "block-scoped-var": "warn",
+        "block-spacing": ["warn", "never"],
+        "brace-style": ["warn", "1tbs", { "allowSingleLine": true }],
+        "callback-return": ["warn"],
+        "camelcase": "off",
+        "capitalized-comments": "off",
+        "class-methods-use-this": "off",
+        "comma-dangle": "off",
+        "comma-spacing": "warn",
+        "comma-style": "warn",
+        "complexity": "off",
+        "computed-property-spacing": "warn",
+        "consistent-return": "warn",
+        "consistent-this": "off",
+        "constructor-super": "warn",
+        "curly": ["warn", "multi-or-nest", "consistent"],
+        "default-case": "warn",
+        "dot-location": "warn",
+        "dot-notation": "warn",
+        "eol-last": "warn",
+        "eqeqeq": "warn",
+        "for-direction": "warn",
+        "func-call-spacing": "warn",
+
+        "indent": "warn",
+
+        "spaced-comment": "warn"
+
+    }
+}
