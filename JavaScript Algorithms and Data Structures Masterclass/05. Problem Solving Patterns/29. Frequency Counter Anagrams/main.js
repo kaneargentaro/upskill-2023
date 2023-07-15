@@ -114,10 +114,6 @@ function validAnagram2(str1, str2) {
         if (!frequencyCounter1[char]) 
             return false
 
-        // This character has occurred too many times to be valid
-        if (frequencyCounter1[char] === 0) 
-            return false
-
         // Decrease frequency occurrence of this entry
         frequencyCounter1[char] = frequencyCounter1[char] - 1
     }
@@ -168,4 +164,3 @@ else console.log("Test 6 Failed");
 
 if (validAnagram2('texttwisttime', 'texttwisttime')) console.log("Test 7 Passed");
 else console.log("Test 7 Failed");
-
