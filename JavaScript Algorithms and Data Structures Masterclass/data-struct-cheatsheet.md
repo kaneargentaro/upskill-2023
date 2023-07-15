@@ -54,15 +54,26 @@
     foreach/map/filter/reduce - O(n)
 ```
 
-# Frequency Counter
+# Problem Solving Patterns
+
+## Frequency Counter
 ```
     Create an array of occurrences and reference it later instead of using nested for loops
 ```
 
-# Multiple Pointers
+## Multiple Pointers
 ```
     Creating pointers or values that correspond to an index or position and move towards the beginning, end
     or middle based on a certain condition.
 
     Efficient for solving problems with minimal space complexity
+```
+
+## Sliding Window
+```
+    This pattern involves creating a window which can either be an array or number from one position to another.
+
+    Depending on a certain condition, the window either increases or closes (and a new window is created).
+
+    Very useful for keeping track of a subset of data in an array/string/etc.
 ```
