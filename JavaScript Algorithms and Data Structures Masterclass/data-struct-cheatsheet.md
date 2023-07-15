@@ -53,3 +53,16 @@
     sort - O(n * log n)
     foreach/map/filter/reduce - O(n)
 ```
+
+# Frequency Counter
+```
+    Create an array of occurrences and reference it later instead of using nested for loops
+```
+
+# Multiple Pointers
+```
+    Creating pointers or values that correspond to an index or position and move towards the beginning, end
+    or middle based on a certain condition.
+
+    Efficient for solving problems with minimal space complexity
+```
