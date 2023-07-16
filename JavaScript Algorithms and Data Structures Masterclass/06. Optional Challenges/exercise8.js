@@ -47,6 +47,7 @@ function minSubArrayLen(arr, value) {
         if (total < value && end < arr.length) {
             total += arr[end];
             end++;
+        // eslint-disable-next-line brace-style
         }
         
         // If the current window adds up to at least the sum given then we can shrink the window
@@ -54,6 +55,7 @@ function minSubArrayLen(arr, value) {
             minLength = Math.min(minLength, end - start);
             total -= arr[start];
             start++;
+        // eslint-disable-next-line brace-style
         }
         
         // Current total less than required total but we reached the end
