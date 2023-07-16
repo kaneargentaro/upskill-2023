@@ -55,10 +55,11 @@ else testFailed(1);
 if (averagePair([1, 3, 3, 5, 6, 7, 10, 12, 19], 8) === true) testPassed(2);
 else testFailed(2);
 
-// Test 3 - Duplicate letters
+// Test 3
 if (averagePair([-1, 0, 3, 4, 5, 6], 4.1) === false) testPassed(3);
 else testFailed(3);
 
+// Test 4
 if (averagePair([], 4) === false) testPassed(4);
 else testFailed(4);
 
