@@ -159,6 +159,8 @@
     - Must faster than linear search.
     - Must be sorted.
     - Eliminate half of the remaining entries at a time.
+
+    Big O = O(log n)
 ```
 
 ### Native String Search
