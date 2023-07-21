@@ -18,6 +18,10 @@
     - [Recursion](#recursion)
       - [Tips](#tips)
   - [Searching Algorithms](#searching-algorithms)
+    - [Linear Search on Arrays](#linear-search-on-arrays)
+    - [Binary Search on Sorted Arrays](#binary-search-on-sorted-arrays)
+    - [Native String Search](#native-string-search)
+    - [KMP String Search](#kmp-string-search)
 
 ## Big O Basics
 
@@ -137,7 +141,7 @@
     Objects: make copies of objects using Object.assign, or the spread operator.
 ```
 
-## Searching Algorithms 
+## Searching Algorithms
 
 ### Linear Search on Arrays
 
@@ -145,10 +149,17 @@
     The basic Array.Prototype search functions like indexOf, find, etc.
 
     Go through the list from first to last, and try and find if the value exists in the array. Returns -1 if it's not found.
+
+    Big O = O(n)
 ```
 
-
 ### Binary Search on Sorted Arrays
+
+```txt
+    - Must faster than linear search.
+    - Must be sorted.
+    - Eliminate half of the remaining entries at a time.
+```
 
 ### Native String Search
 
