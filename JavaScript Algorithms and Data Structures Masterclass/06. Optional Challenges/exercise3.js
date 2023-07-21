@@ -13,7 +13,7 @@
  *  sameFrequency(22,222) // false
  */
 
-const { testPassed, testFailed } = require('./log')
+const { testPassed, testFailed } = require('../log')
 
 /**
  * Two positive integers have the same frequency of digits.

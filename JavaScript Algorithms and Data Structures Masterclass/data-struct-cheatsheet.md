@@ -17,6 +17,7 @@
     - [Divide and Conquer](#divide-and-conquer)
     - [Recursion](#recursion)
       - [Tips](#tips)
+  - [Searching Algorithms](#searching-algorithms)
 
 ## Big O Basics
 
@@ -135,3 +136,20 @@
     Strings: are immutable, so use methods like slice, substr, or substring to make copies of the strings.
     Objects: make copies of objects using Object.assign, or the spread operator.
 ```
+
+## Searching Algorithms 
+
+### Linear Search on Arrays
+
+```txt
+    The basic Array.Prototype search functions like indexOf, find, etc.
+
+    Go through the list from first to last, and try and find if the value exists in the array. Returns -1 if it's not found.
+```
+
+
+### Binary Search on Sorted Arrays
+
+### Native String Search
+
+### KMP String Search
