@@ -208,4 +208,12 @@
 
 ### Selection Sort
 
+```txt
+    Selection sort is similar to bubble sort, but instead of placing large values into a sorted position at the end of the array, it places small values into sorted positions at the beginning.
+
+    eg. you go through the whole array to get the smallest value, and swap it with the current position, then move onto the next.
+
+    Big O = O(n^2)
+```
+
 ### Insertion Sort
