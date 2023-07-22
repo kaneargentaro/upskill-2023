@@ -21,7 +21,11 @@
     - [Linear Search on Arrays](#linear-search-on-arrays)
     - [Binary Search on Sorted Arrays](#binary-search-on-sorted-arrays)
     - [Native String Search](#native-string-search)
+    - [Built-in JavaScript Array Sort](#built-in-javascript-array-sort)
     - [KMP String Search](#kmp-string-search)
+    - [Bubble Sort](#bubble-sort)
+    - [Selection Sort](#selection-sort)
+    - [Insertion Sort](#insertion-sort)
 
 ## Big O Basics
 
@@ -165,4 +169,43 @@
 
 ### Native String Search
 
+```txt
+    like basic nested for loops
+```
+
+### Built-in JavaScript Array Sort
+
+```txt
+    Sorts according to String, so Number arrays don't sort as you would expect.
+
+    Accepts a comparator function to tell it how to sort. eg.
+    [1, 2, 3, 4, 5, 6].sort(a - b);
+    ["abc", "defg"].sort(str1.length - str2.length);
+```
+
 ### KMP String Search
+
+```txt
+```
+
+### Bubble Sort
+
+```txt
+    A sorting algorithm where the largest values bubble to the top.
+
+    Go through the array and compare i and i+1, and swap if i+1 comes before i.
+
+    On each loop, you don't have to sort the last element in the array because it's already sorted from the previous loop.
+
+    Optimise it by adding a 'no swaps performed, so break out of loop' flag.
+
+    Normal:
+        Big O = O(n^2)
+    
+    Optimised version
+        Big O = O(n)
+```
+
+### Selection Sort
+
+### Insertion Sort
