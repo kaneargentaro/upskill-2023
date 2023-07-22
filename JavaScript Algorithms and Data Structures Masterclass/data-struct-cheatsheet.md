@@ -217,3 +217,9 @@
 ```
 
 ### Insertion Sort
+
+```txt
+    Builds up the sort by gradually creating a larger left half which is always sorted
+
+    Big O = O(n^2)
+```
