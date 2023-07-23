@@ -223,3 +223,17 @@
 
     Big O = O(n^2)
 ```
+
+### Merge Sort
+
+```txt
+    Merge sort is a combination of splitting up, merging, and sorting.
+
+    Arrays that are of size 0 or 1 are always sorted.
+
+    Decompose an array into smaller arrays of 0 or 1, then build up a newly sorted array.
+
+    Harder to understand, but faster to execute
+
+    Big O = O(n log n)
+```
