@@ -26,6 +26,8 @@
     - [Bubble Sort](#bubble-sort)
     - [Selection Sort](#selection-sort)
     - [Insertion Sort](#insertion-sort)
+    - [Merge Sort](#merge-sort)
+    - [Quick Sort](#quick-sort)
 
 ## Big O Basics
 
@@ -234,6 +236,18 @@
     Decompose an array into smaller arrays of 0 or 1, then build up a newly sorted array.
 
     Harder to understand, but faster to execute
+
+    Big O = O(n log n)
+```
+
+### Quick Sort
+
+```txt
+    Quick sort is similar to merge sort, in the way that it exploits the fact that arrays of 0 or 1 elements are always sorted.
+
+    It works by selecting on element (called the "pivot") and finds the index where the pivot should end up in the sorted array. Once the pivot is positioned appropriately, quick sort can be applied on either side of the pivot.
+
+    You should pick the median value of the dataset for the pivot point for the best possible runtime.
 
     Big O = O(n log n)
 ```
