@@ -175,7 +175,16 @@
     like basic nested for loops
 ```
 
-### Built-in JavaScript Array Sort
+### KMP String Search
+
+```txt
+```
+
+## Sorting Algorithms
+
+### Comparison Sorting Algorithms
+
+#### Built-in JavaScript Array Sort
 
 ```txt
     Sorts according to String, so Number arrays don't sort as you would expect.
@@ -185,12 +194,7 @@
     ["abc", "defg"].sort(str1.length - str2.length);
 ```
 
-### KMP String Search
-
-```txt
-```
-
-### Bubble Sort
+#### Bubble Sort
 
 ```txt
     A sorting algorithm where the largest values bubble to the top.
@@ -208,7 +212,7 @@
         Big O = O(n)
 ```
 
-### Selection Sort
+#### Selection Sort
 
 ```txt
     Selection sort is similar to bubble sort, but instead of placing large values into a sorted position at the end of the array, it places small values into sorted positions at the beginning.
@@ -218,7 +222,7 @@
     Big O = O(n^2)
 ```
 
-### Insertion Sort
+#### Insertion Sort
 
 ```txt
     Builds up the sort by gradually creating a larger left half which is always sorted
@@ -226,7 +230,7 @@
     Big O = O(n^2)
 ```
 
-### Merge Sort
+#### Merge Sort
 
 ```txt
     Merge sort is a combination of splitting up, merging, and sorting.
@@ -240,7 +244,7 @@
     Big O = O(n log n)
 ```
 
-### Quick Sort
+#### Quick Sort
 
 ```txt
     Quick sort is similar to merge sort, in the way that it exploits the fact that arrays of 0 or 1 elements are always sorted.
@@ -250,4 +254,18 @@
     You should pick the median value of the dataset for the pivot point for the best possible runtime.
 
     Big O = O(n log n)
+```
+
+### Other Sorting Algorithms
+
+#### Radix Sort
+
+```txt
+    Radix sort is a special sorting algorithm that works on lists of numbers (or any binary data).
+    
+    It does not make comparison between elements.
+
+    It exploits the fact that information about the size of a number is encoded in the number of digits. More digits means a bigger number.
+
+    We achieve this by sorting elements in an array into separate 'buckets' based on the rightmost value, and keep going until we've sorted all 'positions' of an individual element. This will sort the whole array over time.
 ```
