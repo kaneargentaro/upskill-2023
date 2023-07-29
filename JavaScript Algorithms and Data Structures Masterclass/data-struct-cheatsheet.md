@@ -21,13 +21,17 @@
     - [Linear Search on Arrays](#linear-search-on-arrays)
     - [Binary Search on Sorted Arrays](#binary-search-on-sorted-arrays)
     - [Native String Search](#native-string-search)
-    - [Built-in JavaScript Array Sort](#built-in-javascript-array-sort)
     - [KMP String Search](#kmp-string-search)
-    - [Bubble Sort](#bubble-sort)
-    - [Selection Sort](#selection-sort)
-    - [Insertion Sort](#insertion-sort)
-    - [Merge Sort](#merge-sort)
-    - [Quick Sort](#quick-sort)
+  - [Sorting Algorithms](#sorting-algorithms)
+    - [Comparison Sorting Algorithms](#comparison-sorting-algorithms)
+      - [Built-in JavaScript Array Sort](#built-in-javascript-array-sort)
+      - [Bubble Sort](#bubble-sort)
+      - [Selection Sort](#selection-sort)
+      - [Insertion Sort](#insertion-sort)
+      - [Merge Sort](#merge-sort)
+      - [Quick Sort](#quick-sort)
+    - [Other Sorting Algorithms](#other-sorting-algorithms)
+      - [Radix Sort](#radix-sort)
 
 ## Big O Basics
 
@@ -268,4 +272,6 @@
     It exploits the fact that information about the size of a number is encoded in the number of digits. More digits means a bigger number.
 
     We achieve this by sorting elements in an array into separate 'buckets' based on the rightmost value, and keep going until we've sorted all 'positions' of an individual element. This will sort the whole array over time.
+
+    Big O = O(nk)
 ```
