@@ -10,6 +10,8 @@
       - [Note](#note-1)
       - [Big O](#big-o-1)
       - [Object Methods](#object-methods-1)
+    - [Singly Linked Lists](#singly-linked-lists)
+      - [Big O](#big-o-2)
   - [Problem Solving Patterns](#problem-solving-patterns)
     - [Frequency Counter](#frequency-counter)
     - [Multiple Pointers](#multiple-pointers)
@@ -32,6 +34,8 @@
       - [Quick Sort](#quick-sort)
     - [Other Sorting Algorithms](#other-sorting-algorithms)
       - [Radix Sort](#radix-sort)
+  - [Data Structures](#data-structures)
+    - [Singly Linked Lists](#singly-linked-lists-1)
 
 ## Big O Basics
 
@@ -95,6 +99,17 @@
     splice - O(n)
     sort - O(n * log n)
     foreach/map/filter/reduce - O(n)
+```
+
+### Singly Linked Lists
+
+#### Big O
+
+```txt
+    Insertion - O(1) (faster then arrays)
+    Removal - O(1) from start or O(n) for end
+    Searching - O(n)
+    Access - O(n)
 ```
 
 ## Problem Solving Patterns
@@ -274,4 +289,22 @@
     We achieve this by sorting elements in an array into separate 'buckets' based on the rightmost value, and keep going until we've sorted all 'positions' of an individual element. This will sort the whole array over time.
 
     Big O = O(nk)
+```
+
+## Data Structures
+
+### Singly Linked Lists
+
+```txt
+    A data structure that contains a head, tail, and a length property. 
+
+    Linked lists consists of nodes, and each node has a value and a pointer to another node or null.
+
+    Linked lists:
+        - do not have indexes (like arrays)
+        - Connected via nodes with a next pointer
+        - Random access is not allowed
+        - Insertion and deletion are relatively cheap compared to Arrays
+
+    Big O go to big o section
 ```
