@@ -1,40 +1,36 @@
 /**
- * 
- * @param {Number[]} arr 
+ *
+ * @param {Number[]} arr
  */
 function selectionSort(arr) {
+	// Loop through each value
+	for (let i = 0; i < arr.length; i++) {
+		// Store the smallest value's index
+		let smallestValueIndex = i;
 
-    // Loop through each value
-    for (let i = 0; i < arr.length; i++) {
+		// Loop through the list and try and find a smaller value
+		// then our current smallestValueIndex
+		for (let j = i + 1; j < arr.length; j++)
+			if (arr[smallestValueIndex] > arr[j]) smallestValueIndex = j;
 
-        // Store the smallest value's index
-        let smallestValueIndex = i;
 
-        // Loop through the list and try and find a smaller value 
-        // then our current smallestValueIndex
-        for (let j = i + 1; j < arr.length; j++) {
-            if (arr[smallestValueIndex] > arr[j]) 
-                smallestValueIndex = j;
-        }
+		// Perform a swap if we found a smaller value
+		if (smallestValueIndex !== i) swap(arr, i, smallestValueIndex);
+	}
 
-        // Perform a swap if we found a smaller value
-        if (smallestValueIndex !== i) 
-            swap(arr, i, smallestValueIndex);
-    }
-
-    return arr;
+	return arr;
 }
 
 /**
- * 
- * @param {Number[]} arr 
- * @param {Number} index1 
- * @param {Number} index2 
+ *
+ * @param {Number[]} arr
+ * @param {Number} index1
+ * @param {Number} index2
  */
 function swap(arr, index1, index2) {
-    let temp = arr[index1];
-    arr[index1] = arr[index2];
-    arr[index2] = temp;
+	const temp = arr[index1];
+	arr[index1] = arr[index2];
+	arr[index2] = temp;
 }
 
 console.log('selectionSort([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);:', selectionSort([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
