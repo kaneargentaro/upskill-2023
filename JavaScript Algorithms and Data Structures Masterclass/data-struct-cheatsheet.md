@@ -36,6 +36,7 @@
       - [Radix Sort](#radix-sort)
   - [Data Structures](#data-structures)
     - [Singly Linked Lists](#singly-linked-lists-1)
+    - [Doubly Linked Lists](#doubly-linked-lists)
 
 ## Big O Basics
 
@@ -307,4 +308,12 @@
         - Insertion and deletion are relatively cheap compared to Arrays
 
     Big O go to big o section
+```
+
+### Doubly Linked Lists
+
+```txt
+    Similar to singly linked lists, but every node has another pointer to the previous node.
+
+    It takes more memory, but is more flexible. 
 ```
