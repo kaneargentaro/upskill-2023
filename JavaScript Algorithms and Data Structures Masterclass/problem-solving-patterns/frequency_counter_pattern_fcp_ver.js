@@ -7,50 +7,47 @@
 
 /**
  * Frequency Counter
- * 
+ *
  * O(n) instead of O(n^2)
- * 
- * @param {*} arr1 
- * @param {*} arr2 
- * @returns 
+ *
+ * @param {*} arr1
+ * @param {*} arr2
+ * @returns
  */
 function same(arr1, arr2) {
-    // Arrays need to be the same length otherwise the frequency will be incorrect
-    if (arr1.length !== arr2.length)
-        return false;
+	// Arrays need to be the same length otherwise the frequency will be incorrect
+	if (arr1.length !== arr2.length) return false;
 
-    // Count how many times each number occurs in each array
-    let frequencyCounter1 = {}
-    let frequencyCounter2 = {}
-    for (let val of arr1) {
-        // if (frequencyCounter1[val]) 
-        //     frequencyCounter1[val] += 1;
-        // else 
-        //     frequencyCounter1[val] = 0;
-        frequencyCounter1[val] = (frequencyCounter1[val] || 0) + 1
-    }
+	// Count how many times each number occurs in each array
+	const frequencyCounter1 = {};
+	const frequencyCounter2 = {};
+	for (const val of arr1) {
+		// if (frequencyCounter1[val])
+		//     frequencyCounter1[val] += 1;
+		// else
+		//     frequencyCounter1[val] = 0;
+		frequencyCounter1[val] = (frequencyCounter1[val] || 0) + 1;
+	}
 
-    for (let val of arr2) {
-        // if (frequencyCounter2[val]) 
-        //     frequencyCounter2[val] += 1;
-        // else 
-        //     frequencyCounter2[val] = 0;
-        frequencyCounter2[val] = (frequencyCounter2[val] || 0) + 1
-    }
+	for (const val of arr2) {
+		// if (frequencyCounter2[val])
+		//     frequencyCounter2[val] += 1;
+		// else
+		//     frequencyCounter2[val] = 0;
+		frequencyCounter2[val] = (frequencyCounter2[val] || 0) + 1;
+	}
 
-    // Loop through our lists and make sure the values match
-    for (let key in frequencyCounter1) {
-        // If arr1 value squared is not in the arr2, exit
-        if (!(key ** 2 in frequencyCounter2)) 
-            return false
-        
-        // If arr1 value squared is in arr2, then check if the value (occurences) are the same
-        if (frequencyCounter2[key ** 2] !== frequencyCounter1[key]) 
-            return false
-    }
+	// Loop through our lists and make sure the values match
+	for (const key in frequencyCounter1) {
+		// If arr1 value squared is not in the arr2, exit
+		if (!(key ** 2 in frequencyCounter2)) return false;
 
-    // All conditions are met, return true.
-    return true;
+		// If arr1 value squared is in arr2, then check if the value (occurences) are the same
+		if (frequencyCounter2[key ** 2] !== frequencyCounter1[key]) return false;
+	}
+
+	// All conditions are met, return true.
+	return true;
 }
 
 // True because they match
