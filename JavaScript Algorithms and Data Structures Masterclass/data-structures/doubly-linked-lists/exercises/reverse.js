@@ -1,3 +1,11 @@
+/*
+	DLL reverse - Exercise 34
+
+	reverse
+
+	This function should reverse all of the nodes in a
+	DoublyLinkedList, and should return the list.
+*/
 class Node {
 	constructor(val) {
 		this.val = val;
@@ -129,13 +137,34 @@ class DoublyLinkedList {
 		this.length--;
 		return removeNode;
 	}
+
+	reverse() {
+		if (this.length === 0) return undefined;
+
+		let current = this.head;
+		this.head = this.tail;
+		this.tail = current;
+
+		let next = null;
+		let prev = null;
+
+		while (current) {
+			next = current.next;
+			current.next = prev;
+			current.prev = next;
+			prev = current;
+			current = next;
+		}
+
+		return this;
+	}
 }
 
-
-const list = new DoublyLinkedList();
-list.push(0).push(1).push(2).push(3).push(4).push(5);
-console.log(list.get(0).val);
-console.log(list.get(1).val);
-console.log(list.get(2).val);
-console.log(list.get(3).val);
-console.log(list.get(4).val);
+const doublyLinkedList = new DoublyLinkedList();
+doublyLinkedList.push(5).push(10).push(15).push(20);
+console.log(doublyLinkedList.reverse()); // singlyLinkedList;
+console.log(doublyLinkedList.length); // 4
+console.log(doublyLinkedList.head.val); // 20
+console.log(doublyLinkedList.head.next.val); // 15
+console.log(doublyLinkedList.head.next.next.val); // 10
+console.log(doublyLinkedList.head.next.next.next.val); // 5

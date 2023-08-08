@@ -113,6 +113,17 @@
     Access - O(n)
 ```
 
+### Doubly Linked Lists
+
+#### Big O
+
+```txt
+    Insertion - O(1) 
+    Removal - O(1) 
+    Searching - O(n)
+    Access - O(n)
+```
+
 ## Problem Solving Patterns
 
 ### Frequency Counter

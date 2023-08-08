@@ -1,3 +1,12 @@
+/*
+DLL pop - Exercise 31
+
+Implement the following on the DoublyLinkedList class
+
+pop
+
+This function should remove a node at the end of the DoublyLinkedList. It should return the node removed.
+*/
 class Node {
 	constructor(val) {
 		this.val = val;
@@ -94,24 +103,6 @@ class DoublyLinkedList {
 		return true;
 	}
 
-	insert(pos, val) {
-		if (pos < 0 || pos >= this.length) return false;
-		if (pos === 0) return Boolean(this.unshift(val));
-		if (pos === this.length) return Boolean(this.push(val));
-
-		const thisNode = new Node(val);
-		const previousNode = this.get(pos - 1);
-		const nextNode = previousNode.next;
-
-		thisNode.next = nextNode;
-		thisNode.prev = previousNode;
-		previousNode.next = thisNode;
-		nextNode.prev = thisNode;
-
-		this.length++;
-		return true;
-	}
-
 	remove(pos) {
 		if (pos < 0 || pos >= this.length) return undefined;
 		if (pos === 0) return this.shift();
@@ -131,11 +122,30 @@ class DoublyLinkedList {
 	}
 }
 
-
-const list = new DoublyLinkedList();
-list.push(0).push(1).push(2).push(3).push(4).push(5);
-console.log(list.get(0).val);
-console.log(list.get(1).val);
-console.log(list.get(2).val);
-console.log(list.get(3).val);
-console.log(list.get(4).val);
+var doublyLinkedList = new DoublyLinkedList;
+doublyLinkedList.push(5); // doublyLinkedList
+doublyLinkedList.length; // 1
+doublyLinkedList.head.val; // 5
+doublyLinkedList.tail.val; // 5
+doublyLinkedList.head.prev // null
+doublyLinkedList.push(10); doublyLinkedList 
+doublyLinkedList.length; // 2
+doublyLinkedList.head.val; // 5
+doublyLinkedList.head.next.val; // 10
+doublyLinkedList.tail.val; // 10
+doublyLinkedList.head.next.prev.val // 10
+doublyLinkedList.push(15); doublyLinkedList
+doublyLinkedList.length; // 3
+doublyLinkedList.head.val; // 5
+doublyLinkedList.tail.val; // 15
+doublyLinkedList.tail.prev.val; // 10
+doublyLinkedList.head.next.next.val; // 15
+ 
+doublyLinkedList.pop().val; // 15
+doublyLinkedList.length; // 2
+doublyLinkedList.pop().val; // 10
+doublyLinkedList.length; // 1
+doublyLinkedList.pop().val; // 5
+doublyLinkedList.length; // 0
+doublyLinkedList.pop(); // undefined
+doublyLinkedList.length; // 0
