@@ -1,42 +1,47 @@
 # Data Structures Cheatsheet
 
 - [Data Structures Cheatsheet](#data-structures-cheatsheet)
-  - [Big O Basics](#big-o-basics)
-    - [Objects](#objects)
-      - [Note](#note)
-      - [Big O](#big-o)
-      - [Object Methods](#object-methods)
-    - [Arrays](#arrays)
-      - [Note](#note-1)
-      - [Big O](#big-o-1)
-      - [Object Methods](#object-methods-1)
-    - [Singly Linked Lists](#singly-linked-lists)
-      - [Big O](#big-o-2)
-  - [Problem Solving Patterns](#problem-solving-patterns)
-    - [Frequency Counter](#frequency-counter)
-    - [Multiple Pointers](#multiple-pointers)
-    - [Sliding Window](#sliding-window)
-    - [Divide and Conquer](#divide-and-conquer)
-    - [Recursion](#recursion)
-      - [Tips](#tips)
-  - [Searching Algorithms](#searching-algorithms)
-    - [Linear Search on Arrays](#linear-search-on-arrays)
-    - [Binary Search on Sorted Arrays](#binary-search-on-sorted-arrays)
-    - [Native String Search](#native-string-search)
-    - [KMP String Search](#kmp-string-search)
-  - [Sorting Algorithms](#sorting-algorithms)
-    - [Comparison Sorting Algorithms](#comparison-sorting-algorithms)
-      - [Built-in JavaScript Array Sort](#built-in-javascript-array-sort)
-      - [Bubble Sort](#bubble-sort)
-      - [Selection Sort](#selection-sort)
-      - [Insertion Sort](#insertion-sort)
-      - [Merge Sort](#merge-sort)
-      - [Quick Sort](#quick-sort)
-    - [Other Sorting Algorithms](#other-sorting-algorithms)
-      - [Radix Sort](#radix-sort)
-  - [Data Structures](#data-structures)
-    - [Singly Linked Lists](#singly-linked-lists-1)
-    - [Doubly Linked Lists](#doubly-linked-lists)
+	- [Big O Basics](#big-o-basics)
+		- [Objects](#objects)
+			- [Note](#note)
+			- [Big O](#big-o)
+			- [Object Methods](#object-methods)
+		- [Arrays](#arrays)
+			- [Note](#note-1)
+			- [Big O](#big-o-1)
+			- [Object Methods](#object-methods-1)
+		- [Singly Linked Lists](#singly-linked-lists)
+			- [Big O](#big-o-2)
+		- [Doubly Linked Lists](#doubly-linked-lists)
+			- [Big O](#big-o-3)
+		- [Stack](#stack)
+			- [Big O](#big-o-4)
+	- [Problem Solving Patterns](#problem-solving-patterns)
+		- [Frequency Counter](#frequency-counter)
+		- [Multiple Pointers](#multiple-pointers)
+		- [Sliding Window](#sliding-window)
+		- [Divide and Conquer](#divide-and-conquer)
+		- [Recursion](#recursion)
+			- [Tips](#tips)
+	- [Searching Algorithms](#searching-algorithms)
+		- [Linear Search on Arrays](#linear-search-on-arrays)
+		- [Binary Search on Sorted Arrays](#binary-search-on-sorted-arrays)
+		- [Native String Search](#native-string-search)
+		- [KMP String Search](#kmp-string-search)
+	- [Sorting Algorithms](#sorting-algorithms)
+		- [Comparison Sorting Algorithms](#comparison-sorting-algorithms)
+			- [Built-in JavaScript Array Sort](#built-in-javascript-array-sort)
+			- [Bubble Sort](#bubble-sort)
+			- [Selection Sort](#selection-sort)
+			- [Insertion Sort](#insertion-sort)
+			- [Merge Sort](#merge-sort)
+			- [Quick Sort](#quick-sort)
+		- [Other Sorting Algorithms](#other-sorting-algorithms)
+			- [Radix Sort](#radix-sort)
+	- [Data Structures](#data-structures)
+		- [Singly Linked Lists](#singly-linked-lists-1)
+		- [Doubly Linked Lists](#doubly-linked-lists-1)
+		- [Stack](#stack-1)
 
 ## Big O Basics
 
@@ -123,6 +128,18 @@
     Searching - O(n)
     Access - O(n)
 ```
+
+### Stack
+
+#### Big O
+
+```txt
+    Insertion - O(1) 
+    Removal - O(1) 
+    Searching - O(n) // not the point of stack
+    Access - O(n) // not the point of stack
+```
+
 
 ## Problem Solving Patterns
 
@@ -327,4 +344,12 @@
     Similar to singly linked lists, but every node has another pointer to the previous node.
 
     It takes more memory, but is more flexible. 
+```
+
+### Stack
+
+```txt
+    Abstract data structure that is a collection of data.
+
+	Required to abide by LIFO (last in, first out) data structure.
 ```
