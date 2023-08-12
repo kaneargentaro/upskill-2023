@@ -140,7 +140,6 @@
     Access - O(n) // not the point of stack
 ```
 
-
 ## Problem Solving Patterns
 
 ### Frequency Counter
@@ -351,5 +350,5 @@
 ```txt
     Abstract data structure that is a collection of data.
 
-	Required to abide by LIFO (last in, first out) data structure.
+ Required to abide by LIFO (last in, first out) data structure.
 ```
