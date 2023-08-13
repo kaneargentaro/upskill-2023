@@ -49,6 +49,9 @@
 		- [Tree](#tree)
 		- [Binary Tree](#binary-tree)
 		- [Binary Search Tree](#binary-search-tree-1)
+		- [Tree Traversal](#tree-traversal)
+			- [Breadth First Search](#breadth-first-search)
+			- [Depth First Search](#depth-first-search)
 
 ## Big O Basics
 
@@ -417,4 +420,23 @@
 	Used to store data that is compared.
 
 	Every item that is less than a node is stored to the left of it, and every item that is greater than it is stored to the right of it.
+```
+
+### Tree Traversal
+
+#### Breadth First Search
+
+```txt
+	Work horizontal and then go down each level.
+	eg. down, left, right, down, left, rigt, and so on
+```
+
+#### Depth First Search
+
+```txt
+	Top down, go vertically down each node to the bottom before moving horizontally.
+
+	InOrder - bottom vertical up
+	PreOrder - top down
+	PostOrder - bottom horizontal then vertical
 ```
