@@ -16,6 +16,9 @@
 			- [Big O](#big-o-3)
 		- [Stack](#stack)
 			- [Big O](#big-o-4)
+		- [Queue](#queue)
+			- [Big O](#big-o-5)
+		- [Binary Search Tree](#binary-search-tree)
 	- [Problem Solving Patterns](#problem-solving-patterns)
 		- [Frequency Counter](#frequency-counter)
 		- [Multiple Pointers](#multiple-pointers)
@@ -42,6 +45,10 @@
 		- [Singly Linked Lists](#singly-linked-lists-1)
 		- [Doubly Linked Lists](#doubly-linked-lists-1)
 		- [Stack](#stack-1)
+		- [Queue](#queue-1)
+		- [Tree](#tree)
+		- [Binary Tree](#binary-tree)
+		- [Binary Search Tree](#binary-search-tree-1)
 
 ## Big O Basics
 
@@ -138,6 +145,24 @@
     Removal - O(1) 
     Searching - O(n) // not the point of stack
     Access - O(n) // not the point of stack
+```
+
+### Queue
+
+#### Big O
+
+```txt
+    Insertion - O(1) 
+    Removal - O(1) 
+    Searching - O(n) 
+    Access - O(n) 
+```
+
+### Binary Search Tree
+
+```txt
+    Insertion - O(log n) 
+    Searching - O(log n) 
 ```
 
 ## Problem Solving Patterns
@@ -350,5 +375,46 @@
 ```txt
     Abstract data structure that is a collection of data.
 
- Required to abide by LIFO (last in, first out) data structure.
+ 	Required to abide by LIFO (last in, first out) data structure.
+```
+
+### Queue
+
+```txt
+    Abstract data structure that is a collection of data.
+
+	Required to abide by FIFO (first in, first out) data structure.
+```
+
+### Tree
+
+```txt
+	Data structure that consists of nodes in a parent and child relationship.
+
+	Lists are linear, whereas trees are non linear.
+
+	Terminology:
+		- Root - top node in a tree
+		- Child - a node directly connected to another node when moving away from the Root
+		- Parent - the converse notion of a child
+		- Siblings - a group of nodes with the same parent
+		- Lead - a node with no children
+```
+
+### Binary Tree
+
+```txt
+	Subset of a tree, but can only have two children
+```
+
+### Binary Search Tree
+
+```txt
+	- Type of Binary tree.
+	- At most 2 children
+	- Sorted
+
+	Used to store data that is compared.
+
+	Every item that is less than a node is stored to the left of it, and every item that is greater than it is stored to the right of it.
 ```
