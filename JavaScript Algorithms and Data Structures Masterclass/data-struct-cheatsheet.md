@@ -19,6 +19,7 @@
 		- [Queue](#queue)
 			- [Big O](#big-o-5)
 		- [Binary Search Tree](#binary-search-tree)
+		- [Binary Heap](#binary-heap)
 	- [Problem Solving Patterns](#problem-solving-patterns)
 		- [Frequency Counter](#frequency-counter)
 		- [Multiple Pointers](#multiple-pointers)
@@ -49,9 +50,11 @@
 		- [Tree](#tree)
 		- [Binary Tree](#binary-tree)
 		- [Binary Search Tree](#binary-search-tree-1)
-		- [Tree Traversal](#tree-traversal)
-			- [Breadth First Search](#breadth-first-search)
-			- [Depth First Search](#depth-first-search)
+			- [Tree Traversal](#tree-traversal)
+				- [Breadth First Search](#breadth-first-search)
+				- [Depth First Search](#depth-first-search)
+		- [Binary Heap](#binary-heap-1)
+		- [Priority Queue](#priority-queue)
 
 ## Big O Basics
 
@@ -165,8 +168,17 @@
 
 ```txt
     Insertion - O(log n) 
+	Removal - O(log n)
+    Searching - O(n) 
+```
+
+### Binary Heap
+
+```text
+	Insertion - O(log n) 
     Searching - O(log n) 
 ```
+
 
 ## Problem Solving Patterns
 
@@ -428,7 +440,7 @@
 
 ```txt
 	Work horizontal and then go down each level.
-	eg. down, left, right, down, left, rigt, and so on
+	eg. down, left, right, down, left, right, and so on
 ```
 
 ##### Depth First Search
@@ -447,7 +459,7 @@
 	Binary heaps are similar to tree structures, where it can either be
 		- Max Binary Heap
 			- Must have at most two child nodes
-			- Value of arent node is always grater than it's child node
+			- Value of aren't node is always grater than it's child node
 			- Parent is greater than the children
 			- Compact - all nodes are filled out as much as possible and left side is filled out first.
 		- Min Binary Heap
@@ -455,4 +467,10 @@
 			- Root is the lowest
 
 	Binary heaps are used to implement Priority Queues.
+```
+
+### Priority Queue
+
+```txt
+	Data structure where each element has a priority. Elements with higher priorities are served before elements with lower priorities.
 ```
