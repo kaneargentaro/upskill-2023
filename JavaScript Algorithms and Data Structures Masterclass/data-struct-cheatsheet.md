@@ -422,16 +422,16 @@
 	Every item that is less than a node is stored to the left of it, and every item that is greater than it is stored to the right of it.
 ```
 
-### Tree Traversal
+#### Tree Traversal
 
-#### Breadth First Search
+##### Breadth First Search
 
 ```txt
 	Work horizontal and then go down each level.
 	eg. down, left, right, down, left, rigt, and so on
 ```
 
-#### Depth First Search
+##### Depth First Search
 
 ```txt
 	Top down, go vertically down each node to the bottom before moving horizontally.
@@ -439,4 +439,20 @@
 	InOrder - bottom vertical up
 	PreOrder - top down
 	PostOrder - bottom horizontal then vertical
+```
+
+### Binary Heap
+
+```txt
+	Binary heaps are similar to tree structures, where it can either be
+		- Max Binary Heap
+			- Must have at most two child nodes
+			- Value of arent node is always grater than it's child node
+			- Parent is greater than the children
+			- Compact - all nodes are filled out as much as possible and left side is filled out first.
+		- Min Binary Heap
+			- Parent is lower than the children
+			- Root is the lowest
+
+	Binary heaps are used to implement Priority Queues.
 ```
