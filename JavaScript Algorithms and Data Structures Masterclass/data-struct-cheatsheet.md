@@ -20,6 +20,8 @@
 			- [Big O](#big-o-5)
 		- [Binary Search Tree](#binary-search-tree)
 		- [Binary Heap](#binary-heap)
+		- [Hash Table](#hash-table)
+		- [Graphs](#graphs)
 	- [Problem Solving Patterns](#problem-solving-patterns)
 		- [Frequency Counter](#frequency-counter)
 		- [Multiple Pointers](#multiple-pointers)
@@ -55,6 +57,8 @@
 				- [Depth First Search](#depth-first-search)
 		- [Binary Heap](#binary-heap-1)
 		- [Priority Queue](#priority-queue)
+		- [Hash Table](#hash-table-1)
+		- [Graphs](#graphs-1)
 
 ## Big O Basics
 
@@ -179,6 +183,34 @@
     Searching - O(log n) 
 ```
 
+### Hash Table
+
+```txt
+	Insertion: O(1)
+	Deletion: O(1)
+	Access: O(1)
+
+```
+
+### Graphs
+
+```txt
+	Adjacency List
+		Add Vertex 			O(1)
+		Add Edge 			O(1)
+		Remove Vertex 		O(|V| + |E|)
+		Remove Edge 		O(|E|)
+		Query 				O(|V| + |E|)
+		Storage 			O(|V| + |E|)
+
+	Adjacency Matrix
+		Add Vertex 			O(|V^2|)
+		Add Edge 			O(1)
+		Remove Vertex 		O(|V^2|)
+		Remove Edge 		O(1)
+		Query 				O(1)
+		Storage 			O(|V^2|)
+```
 
 ## Problem Solving Patterns
 
@@ -473,4 +505,20 @@
 
 ```txt
 	Data structure where each element has a priority. Elements with higher priorities are served before elements with lower priorities.
+```
+
+### Hash Table
+
+```txt
+	Stores key value pairs. Keys are not ordered. Fast for finding, adding, and removing values.
+
+	Basically just an object in js or a hashmap/map in java.
+```
+
+### Graphs
+
+```txt
+	Nodes (vertex) with connections (edge) between them. Weighted or unweighted refers to the values assigned to distances between the vertices. 
+	
+	Directed or undirected refers to the directions assigned to distances between verities. Undirected graphs have no direction to the edge (can go both ways).
 ```
